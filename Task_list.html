@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>
+			 TASK LIST MANAGER
+		</title>
+		
+		<link rel ="stylesheet" href = "Task_list.css" >
+	</head>
+	<body bgcolor="#F5F5F5">
+		<h1 align="center"> <b><MARQUEE>TASK LIST MANAGER</marquee></b></h1><br><br>
+		<div id = "divleft">
+			<input type="text" id="task_txt" placeholder = "ENTER YOUR TASK...... "><br><br>
+			<button onclick="addItem()" id = "task_btn">ADD TASK</button>
+			<button onclick="dltall()" id = "Dlt_all">DELETE ALL TASK</button>
+			<div id ="error">
+			 </div>
+		</div>
+		<div id ="divright">
+			<ul id= "ul_id"></ul>
+		</div>
+		<div id = "dltd_div">
+		<h2 align="left"><b><u><i>DELETED TASKS</i></u></b></h2>
+			<button onclick = "All_clear()" id = "clear">CLEAR</button>
+			<ul id = "ul2"></ul>
+		</div>
+		
+		
+		<script src = "Task_list.js"></script>
+	</body>
+</html>
